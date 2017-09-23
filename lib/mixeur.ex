@@ -27,7 +27,7 @@ defmodule Mixeur do
   defmacro __using__(_opts) do
     quote do
       defmacro __using__(_opts) do
-        Common.Helpers.Delegate.delegate_to(__MODULE__)
+        Mixeur.delegate_to(__MODULE__)
       end
     end
   end
