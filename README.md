@@ -28,7 +28,7 @@ defmodule Pen do
 end
 ```
 
-Oh~Oh~Oh~ApplePen:
+Oh Oh Oh ApplePen:
 ```elixir
 defmodule ApplePen do
     use Apple
