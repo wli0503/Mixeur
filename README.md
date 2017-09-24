@@ -40,6 +40,17 @@ defmodule ApplePen do
 end
 ```
 
+## What's the difference between `import` and `Mixeur`?
+`Mixeur` basically leverages `defdelegate` macro in `Elixir`. So not only it allows 
+you to call functions inside a module(this behaviour is like `import`), also it exposes those functions
+to the outside world. For the example above, you can do:
+```elixir
+iex> ApplePen.apple
+"apple"
+iex> ApplePen.pen
+"pen"
+```
+
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
